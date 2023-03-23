@@ -1,0 +1,181 @@
+body{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: cover;
+    margin: 0;
+}
+.image{
+    width: 60%;
+    background: url("images/background_dinner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+.formulaire{
+    margin: auto;
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+.form_elem{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.form input, .form select{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    width: 80%;
+    outline: none;
+    background-color: black;
+    padding-bottom: 10px;
+}
+::placeholder{
+    color: white;
+}
+.form_1 label{
+    display: none;
+}
+.form:focus-within, .form:valid{
+    color: goldenrod;
+    transition: 0.3s;
+}
+.form input:focus, .form select:focus{
+    border-bottom: 1px solid goldenrod;
+}
+
+option:checked{
+    color: goldenrod;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]+.radio_2 label{
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    padding: 10px;
+}
+.form_radio_list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: baseline;
+}
+.form_radio{
+    display: flex;
+    flex-direction: column;
+}
+.submit input{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgb(238, 199, 101);
+    margin-bottom: 10px;
+}
+
+small{
+    color: rgb(240, 199, 97);
+}
+span{
+    display: none;
+    
+}
+input[type="radio"]:checked~.radio_2 span{
+    display: contents;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+}
+input[type="radio"]:checked~.radio_2 label{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.radio:focus{
+    display: inline-block;
+}
+.form_1{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+.form_1 input:valid+label{
+    display: contents;
+    color:goldenrod ;
+}
+.form_1 input:valid{
+    border-bottom: 1px solid goldenrod;
+}
+select:valid{
+    border-bottom: 1px solid goldenrod;
+}
+input[type="radio"]:checked+.radio_2{
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+    background-color: goldenrod;
+    padding: 6px;
+}
+@media screen and (max-width:768px) and (min-width:425px) {
+    .image{
+        width: 40%;
+    }
+    .formulaire{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:425px) and (min-width:375px) {
+    .container{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: 200px;
+    }
+    .formulaire{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .container{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: 200px;
+    }
+    .formulaire{
+        width: 100%;
+    }
+    .form_radio_list{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+    }
+}

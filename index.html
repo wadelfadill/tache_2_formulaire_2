@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Form</title>
+    <link rel="stylesheet" href="formulaire_3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+
+        </div>
+        <div class="formulaire">
+            <form action="" method="" class="form_elem">
+                <legend><h3>Booking place for your dinner!</h3></legend>
+                <div class="form form_1">
+                    <input type="text" id="name" placeholder="your name" required>
+                    <label for="name">your name</label>
+                </div>
+                <div class="form form_1">
+                    <input type="tel" id="phone" placeholder="your phone number" required>
+                    <label for="phone">your phone number</label>
+                </div>
+                <div class="form">
+                    <select name="time" id="time" required>
+                        <option value="">Time</option>
+                        <option value="1 heure">1 hour</option>
+                        <option value="2 heures">2 hours</option>
+                        <option value="3 heures">3 hours</option>
+                        <option value="4 heures">4 hours</option>
+                        <option value="5 heures">5 hours</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <select name="food" id="food"  required>
+                        <option value="">Food</option>
+                        <option value="Thiebou-Dieune">Thiebou-Dieune</option>
+                        <option value="Yassa">Yassa</option>
+                        <option value="Domoda">Domoda</option>
+                        <option value="Maafe">Maafe</option>
+                    </select>
+                </div>
+                <div class="form_radio">
+                    <label for="space">Select your dinning space</label><br>
+                    <div class="form_radio_list">
+                        <div class="radio">
+                            <input type="radio" id="2_person" value="2" name="space">
+                            <div class="radio_2"><label for="2_person">2</label>
+                                <span>person</span>
+                            </div>
+                        </div>
+                        <div class="radio"><input type="radio" id="4_person" value="4" name="space">
+                            <div class="radio_2">
+                                <label for="4_person">4</label>
+                                <span>person</span>
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="6_person" value="6" name="space">
+                            <div class="radio_2">
+                                <label for="6_person">6</label>
+                                <span>person</span>
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="8_person" value="8" name="space">
+                            <div class="radio_2">
+                                <label for="8_person">8</label>
+                                <span>person</span>
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="10_person" value="10" name="space">
+                            <div class="radio_2">
+                                <label for="10_person">10</label>
+                                <span>person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Book now">
+                   <div> <small>verify your booking into your phone</small></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
